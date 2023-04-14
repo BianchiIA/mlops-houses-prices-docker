@@ -1,0 +1,24 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.2.2
+mlflow_version: 2.2.2
+model_uuid: cdb81a87f45c4a1cb6e63b899fc7df33
+run_id: bcc9998c904c4487802d434d53e05dfa
+signature:
+  inputs: '[{"name": "tamanho", "type": "double"}, {"name": "ano", "type": "long"},
+    {"name": "garagem", "type": "long"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1,
+    1]}}]'
+utc_time_created: '2023-04-12 23:08:26.221003'
